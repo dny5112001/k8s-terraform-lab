@@ -1,0 +1,11 @@
+# Terraform working dirs and state (state can contain secrets!)
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfplan
+
+# kind writes cluster credentials here
+stages/01-cluster/kubeconfig
+
+# Keep .terraform.lock.hcl committed — it pins exact provider builds.
